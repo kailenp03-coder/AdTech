@@ -1747,3 +1747,98 @@ background:#111 !important;
 }
 
 }
+
+/* =================================
+GLOBAL OVERFLOW FIX (stops white space)
+================================= */
+
+html, body{
+width:100%;
+max-width:100%;
+overflow-x:hidden;
+}
+
+/* Ensure nothing exceeds screen width */
+
+*{
+box-sizing:border-box;
+max-width:100%;
+}
+
+/* =================================
+WHY CHOOSE US MOBILE FIX
+================================= */
+
+@media (max-width:768px){
+
+.why-us-section{
+padding:80px 20px;
+overflow:hidden;
+}
+
+.why-grid{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:30px;
+}
+
+/* Fix large decorative circle */
+.why-bg-circle,
+.why-circle{
+position:relative !important;
+left:auto !important;
+transform:none !important;
+margin:0 auto 30px auto;
+width:260px !important;
+height:260px !important;
+}
+
+/* Ensure text appears */
+.why-content,
+.why-card{
+position:relative !important;
+opacity:1 !important;
+transform:none !important;
+}
+
+/* Improve spacing */
+.why-card{
+width:100%;
+max-width:420px;
+text-align:center;
+}
+
+}
+
+/* =================================
+FIX ABSOLUTE ELEMENTS OVERFLOW
+================================= */
+
+.hero-premium,
+.services-showcase,
+.why-us-section{
+overflow:hidden;
+}
+
+/* =================================
+IMAGE RESPONSIVENESS
+================================= */
+
+img{
+max-width:100%;
+height:auto;
+display:block;
+}
+
+/* =================================
+CONTAINER SAFETY
+================================= */
+
+.container{
+width:100%;
+max-width:1200px;
+margin:0 auto;
+padding-left:20px;
+padding-right:20px;
+}
