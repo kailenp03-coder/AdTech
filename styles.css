@@ -1960,3 +1960,58 @@ color:#666;
 }
 
 }
+
+/* ======================================
+WHY CHOOSE US – FORCE MOBILE LAYOUT
+====================================== */
+
+@media (max-width:768px){
+
+/* Reset everything that may hide content */
+#why-us *{
+position:relative !important;
+left:auto !important;
+top:auto !important;
+transform:none !important;
+opacity:1 !important;
+}
+
+/* Stack layout */
+#why-us .container{
+display:flex !important;
+flex-direction:column;
+align-items:center;
+gap:20px;
+}
+
+/* Make cards visible */
+#why-us .why-card{
+display:block !important;
+width:100%;
+max-width:420px;
+background:#f7f7f7;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Hide circle graphics */
+#why-us .why-bg-circle,
+#why-us .why-circle,
+#why-us .why-main-circle{
+display:none !important;
+}
+
+/* Improve text readability */
+#why-us h3{
+font-size:18px;
+margin-bottom:6px;
+color:#111;
+}
+
+#why-us p{
+font-size:14px;
+color:#555;
+}
+
+}
