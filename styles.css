@@ -2,6 +2,10 @@
    BREVY PROJECTS – CLEAN PREMIUM STYLES
 ===================================================== */
 
+body{
+background:red !important;
+}
+
 :root {
 --primary:#ff7a00;
 --accent:#ff9a2f;
