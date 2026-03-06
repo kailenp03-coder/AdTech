@@ -1663,3 +1663,77 @@ height:100%;
 }
 
 }
+
+/* =====================================================
+   MOBILE FIXES – TEAM SECTION
+   Paste at END of CSS
+===================================================== */
+
+@media (max-width:768px){
+
+/* Ensure team card content is visible */
+.team-card .team-info,
+.team-overlay{
+opacity:1 !important;
+transform:none !important;
+position:relative !important;
+display:block !important;
+}
+
+/* Remove hover-only behaviour */
+.team-card:hover .team-info,
+.team-card:hover .team-overlay{
+opacity:1 !important;
+}
+
+/* Fix card sizing */
+.team-card{
+height:auto !important;
+min-height:auto !important;
+padding:30px 20px !important;
+}
+
+/* Prevent content clipping */
+.team-card *{
+overflow:visible !important;
+}
+
+/* Improve spacing */
+.team-grid{
+grid-template-columns:1fr !important;
+gap:25px !important;
+}
+
+/* Fix titles alignment */
+.team-card h3{
+font-size:20px;
+margin-bottom:10px;
+}
+
+/* Improve description readability */
+.team-card p{
+font-size:15px;
+line-height:1.5;
+}
+
+/* Remove large shadows that look bad on mobile */
+.team-card{
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Fix orange side bar alignment if used */
+.team-card::before{
+left:0 !important;
+height:100%;
+}
+
+}
+
+html{
+scroll-padding-top:90px;
+}
+
+html{
+scroll-behavior:smooth;
+scroll-padding-top:90px;
+}
