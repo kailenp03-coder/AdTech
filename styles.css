@@ -1842,3 +1842,51 @@ margin:0 auto;
 padding-left:20px;
 padding-right:20px;
 }
+
+/* ================================
+WHY CHOOSE US MOBILE FIX
+================================ */
+
+@media (max-width:768px){
+
+/* Stack layout vertically */
+.why-us-section{
+padding:80px 20px;
+}
+
+.why-layout{
+display:flex !important;
+flex-direction:column;
+align-items:center;
+gap:40px;
+}
+
+/* Fix big background circle */
+.why-bg-circle{
+position:relative !important;
+left:auto !important;
+top:auto !important;
+transform:none !important;
+margin:20px auto;
+width:260px !important;
+height:260px !important;
+}
+
+/* Fix small icon circles */
+.why-item{
+position:relative !important;
+left:auto !important;
+top:auto !important;
+transform:none !important;
+margin:20px auto;
+text-align:center;
+}
+
+/* Ensure text is visible */
+.why-item h3,
+.why-item p{
+opacity:1 !important;
+transform:none !important;
+}
+
+}
