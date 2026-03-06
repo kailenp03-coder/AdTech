@@ -165,11 +165,35 @@ header a {
 ===================================================== */
 
 .hero-premium{
-  position:relative;
-  min-height:90vh;
-  display:flex;
-  align-items:center;
-  overflow:hidden;
+position:relative;
+overflow:hidden;
+}
+
+@media (max-width:768px){
+
+.hero-premium::before,
+.hero-premium::after{
+display:none;
+}
+
+.hero-premium .glow,
+.hero-premium .shape{
+display:none;
+}
+
+}
+
+@media (max-width:768px){
+
+.hero-content h1{
+font-size:36px;
+line-height:1.2;
+}
+
+.hero-sub{
+font-size:16px;
+}
+
 }
 
 /* ====================================
