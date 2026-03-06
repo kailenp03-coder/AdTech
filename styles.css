@@ -2,10 +2,6 @@
    BREVY PROJECTS – CLEAN PREMIUM STYLES
 ===================================================== */
 
-body{
-background:red !important;
-}
-
 :root {
 --primary:#ff7a00;
 --accent:#ff9a2f;
@@ -1737,7 +1733,17 @@ html{
 scroll-padding-top:90px;
 }
 
-html{
-scroll-behavior:smooth;
-scroll-padding-top:90px;
+/* FIX FAQ BACKGROUND MOBILE */
+
+.faq-section{
+background:#111 !important;
+color:white;
+}
+
+@media (max-width:768px){
+
+.faq-section{
+background:#111 !important;
+}
+
 }
