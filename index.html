@@ -2,15 +2,6 @@
 <html lang="en">
 <head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17395475370"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17395475370');
-</script>
 
 <!-- Event snippet for Wa Click conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
@@ -99,13 +90,11 @@ function gtag_report_conversion(url) {
       We design high-performing websites, implement advanced analytics and tracking, and run profitable advertising campaigns across Google and social media to help businesses scale online.
     </p>
 
-<div class="hero-actions">
-  <a class="btn primary" 
-     href="https://wa.me/27685874885" 
-     onclick="gtag('event', 'conversion', {'send_to': 'AW-17395475370/XXXXXXXXXX'});">
-     Contact Us Today
-  </a>
-</div>
+<a class="btn primary" 
+   href="https://wa.me/27685874885"
+   onclick="return gtag_report_conversion('https://wa.me/27685874885');">
+   Contact Us Today
+</a>
 
     <div class="hero-trust">
       <span>Custom Built Websites</span>
@@ -340,10 +329,10 @@ function gtag_report_conversion(url) {
           <span>+ R350 / month</span>
         </div>
 
-        <a href="https://wa.me/27685874885" 
+<a href="https://wa.me/27685874885" 
    class="plan-btn" 
    target="_blank"
-   onclick="gtag('event', 'conversion', {'send_to': 'AW-17395475370/XXXXXXXXXX'});">
+   onclick="return gtag_report_conversion('https://wa.me/27685874885');">
    Build today
 </a>
 
@@ -367,10 +356,10 @@ function gtag_report_conversion(url) {
           <span>+ R450 / month</span>
         </div>
 
-       <a href="https://wa.me/27685874885" 
+<a href="https://wa.me/27685874885" 
    class="plan-btn" 
    target="_blank"
-   onclick="gtag('event', 'conversion', {'send_to': 'AW-17395475370/XXXXXXXXXX'});">
+   onclick="return gtag_report_conversion('https://wa.me/27685874885');">
    Get Started
 </a>
 
@@ -392,10 +381,10 @@ function gtag_report_conversion(url) {
           <span>Based on project scope</span>
         </div>
 
-        <a href="https://wa.me/27685874885" 
+<a href="https://wa.me/27685874885" 
    class="plan-btn" 
    target="_blank"
-   onclick="gtag('event', 'conversion', {'send_to': 'AW-17395475370/XXXXXXXXXX'});">
+   onclick="return gtag_report_conversion('https://wa.me/27685874885');">
    Get a Quote
 </a>
 
@@ -417,10 +406,10 @@ function gtag_report_conversion(url) {
           <span>Campaign setup</span>
         </div>
 
-       <a href="https://wa.me/27685874885" 
+<a href="https://wa.me/27685874885" 
    class="plan-btn" 
    target="_blank"
-   onclick="gtag('event', 'conversion', {'send_to': 'AW-17395475370/XXXXXXXXXX'});">
+   onclick="return gtag_report_conversion('https://wa.me/27685874885');">
    Launch Ads
 </a>
 
@@ -857,11 +846,6 @@ function gtag_report_conversion(url) {
 
 </footer>
 
-<a href="https://wa.me/27685874885" 
-   class="plan-btn" 
-   target="_blank"
-   onclick="gtag('event', 'conversion', {'send_to': 'AW-17395475370/XXXXXXXXXX'}); return true;">
-</a>
 
 <script src="script.js"></script>
 </body>
