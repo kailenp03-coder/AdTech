@@ -2,6 +2,15 @@
 <html lang="en">
 <head>
 
+<meta http-equiv="Content-Security-Policy" content="
+default-src 'self';
+script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com;
+connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com;
+img-src 'self' https://www.google-analytics.com data:;
+style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+font-src 'self' https://fonts.gstatic.com;
+">
+
 
 <!-- Event snippet for Wa Click conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
