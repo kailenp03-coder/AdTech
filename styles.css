@@ -266,10 +266,13 @@ font-size:16px;
   color:var(--light);
 }
 
-.hero-trust span {
-  margin-right: 20px;
-  font-weight: 600;
-  color: var(--accent);
+
+.hero-trust {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* =====================================================
