@@ -24,6 +24,9 @@ window.addEventListener("scroll", () => {
 // =============================
 // SMOOTH SCROLL (FIXED)
 // =============================
+// =============================
+// SMOOTH SCROLL (FIXED)
+// =============================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
     const targetId = this.getAttribute("href");
