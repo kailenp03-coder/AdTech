@@ -2526,3 +2526,12 @@ gap:50px;
     grid-template-columns: 1fr;
   }
 }
+
+.hero-actions {
+  margin-top: 40px;
+}
+
+.btn.primary {
+  padding: 14px 28px;
+  border-radius: 10px;
+}
