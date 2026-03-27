@@ -82,17 +82,19 @@ function gtag_report_conversion(url) {
   <div class="container hero-content">
     <span class="hero-pill">Johannesburg Digital Growth Experts</span>
 
-    <h1>Get a Website That Brings You Clients — Without Paying R10,000+ Upfront</h1>
+    <h1>Get a Website That Brings You Clients  Without Paying R10,000+ Upfront</h1>
 
     <p class="hero-sub">
       We build, launch, and manage your website for a simple monthly fee — so you can focus on running your business while we bring you customers.
     </p>
 
-<a class="btn primary" 
-   href="https://wa.me/27685874885?text=Hi%20I%20found%20you%20on%20Google"
-   onclick="return gtag_report_conversion('https://wa.me/27685874885?text=Hi%20I%20found%20you%20on%20Google');">
-   Contact Us Today
-</a>
+    <div class="hero-actions">
+      <a class="btn primary" 
+      href="https://wa.me/27685874885?text=Hi%20I%20found%20you%20on%20Google"
+      onclick="return gtag_report_conversion('https://wa.me/27685874885?text=Hi%20I%20found%20you%20on%20Google');">
+      Contact Us Today
+      </a>
+    </div>
 
     <div class="hero-trust">
       <span>No large upfront cost</span>
@@ -158,25 +160,13 @@ function gtag_report_conversion(url) {
       </div>
 
       <div class="service-card">
-        <div class="service-icon">📐</div>
-        <h3>Tracking Pixels & Conversion Tracking</h3>
-        <p>Accurate tracking is essential for marketing success. We install Google, Meta, and other tracking pixels to monitor conversions and optimise campaigns.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">💡</div>
-        <h3>Google Ads Management</h3>
-        <p>We create and manage high-performing Google Ads campaigns that bring targeted traffic and qualified leads to your business.</p>
-      </div>
-
-      <div class="service-card">
         <div class="service-icon">🏢</div>
-        <h3>Social Media Advertising</h3>
+        <h3>Google and Social Media Advertising</h3>
         <p>Reach the right audience with strategic ad campaigns across Facebook, Instagram, and other social platforms.</p>
       </div>
 
-      <div style="text-align:center; margin-top:40px;">
-  <a class="btn primary" href="https://wa.me/27685874885" target="_blank">
+<div class="services-cta">
+  <a class="btn whatsapp-btn" href="https://wa.me/27685874885">
     Get My Website Started
   </a>
 </div>
@@ -222,11 +212,11 @@ function gtag_report_conversion(url) {
   </div>
 </div>
 
-<a class="btn primary" 
-   href="https://wa.me/27685874885?text=Hi%20I%20found%20you%20on%20Google"
-   onclick="gtag('event','conversion',{'send_to':'AW-17395475370/X7wxCMfptf0aEKrH5-ZA'}); window.open(this.href, '_blank'); return false;">
-   Get Started
-</a>
+<div class="services-cta">
+  <a class="btn whatsapp-btn" href="https://wa.me/27685874885">
+    Get My Website Started
+  </a>
+</div>
 
   </div>
 
@@ -436,7 +426,7 @@ function gtag_report_conversion(url) {
 </section>
 
 
-<section class="urgency-section">
+<section class="problem-section">
   <div class="container">
 
     <h2>Every Day Without a Website Is Lost Business</h2>
@@ -734,15 +724,15 @@ function gtag_report_conversion(url) {
 
 
 <section class="final-cta">
-  <div class="container">
+  <div class="container center">
 
-<h2>Stop Losing Customers — Start Getting Leads Today</h2>
+    <h2>Stop Losing Customers — Start Getting Leads Today</h2>
 
-<p>
-Let us build a website that works for your business 24/7 and brings you consistent enquiries.
-</p>
+    <p>
+      Let us build a website that works for your business 24/7 and brings you consistent enquiries.
+    </p>
 
-    <a class="btn primary" href="https://wa.me/27685874885" target="_blank">
+    <a class="btn whatsapp-btn" href="https://wa.me/27685874885">
       Message Us on WhatsApp
     </a>
 
@@ -807,5 +797,20 @@ Let us build a website that works for your business 24/7 and brings you consiste
 
 
 <script src="script.js"></script>
+
+<script>
+document.querySelectorAll('.whatsapp-btn').forEach(function(button) {
+  button.addEventListener('click', function(e) {
+
+    if (typeof gtag === "function") {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17395475370/X7wxCMfptf0aEKrH5-ZA'
+      });
+    }
+
+  });
+});
+</script>
+
 </body>
 </html>
