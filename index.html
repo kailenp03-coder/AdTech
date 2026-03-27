@@ -22,7 +22,8 @@ function gtag_report_conversion(url) {
   };
   gtag('event', 'conversion', {
       'send_to': 'AW-17395475370/X7wxCMfptf0aEKrH5-ZA',
-      'event_callback': callback
+      'event_callback': callback,
+      'event_timeout': 2000
   });
   return false;
 }
@@ -89,11 +90,11 @@ function gtag_report_conversion(url) {
     </p>
 
     <div class="hero-actions">
-      <a class="btn primary" 
-      href="https://wa.me/27685874885?text=Hi%20I%20found%20you%20on%20Google"
-      onclick="return gtag_report_conversion('https://wa.me/27685874885?text=Hi%20I%20found%20you%20on%20Google');">
-      Contact Us Today
-      </a>
+<a class="btn primary" 
+   href="https://wa.me/27685874885?text=Hi%20I%20found%20you%20on%20Google"
+   onclick="return gtag_report_conversion('https://wa.me/27685874885?text=Hi%20I%20found%20you%20on%20Google');">
+   Contact Us Today
+</a>
     </div>
 
     <div class="hero-trust">
