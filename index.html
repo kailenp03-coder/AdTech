@@ -3,13 +3,26 @@
 <head>
 
 <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17395475370"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
+
   function gtag(){dataLayer.push(arguments);}
+
+  // 🔥 Force full initialization
   gtag('js', new Date());
 
-  gtag('config', 'AW-17395475370');
+  // 🔥 IMPORTANT: Explicit Ads config
+  gtag('config', 'AW-17395475370', {
+    'send_page_view': true
+  });
+</script>
+
+<script>
+gtag('config', 'AW-17395475370', {
+  'conversion_linker': true
+});
 </script>
 
 <!-- Conversion function -->
