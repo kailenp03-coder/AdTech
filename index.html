@@ -7,18 +7,17 @@
   // Helper function to delay opening a URL until a gtag event is sent.
   // Call it in response to an action that should navigate to a URL.
   function gtagSendEvent(url) {
-    var callback = function () {
-      if (typeof url === 'string') {
-        window.location = url;
-      }
-    };
-    gtag('event', 'conversion_event_outbound_click', {
-      'event_callback': callback,
-      'event_timeout': 2000,
-      // <event_parameters>
-    });
-    return false;
-  }
+  gtag('event', 'conversion', {
+    'send_to': 'AW-17395475370/X7wxCMfptf0aEKrH5-ZA'
+  });
+
+  // Force delay before redirect
+  setTimeout(function () {
+    window.location = url;
+  }, 800);
+
+  return false;
+}
 </script>
 
 
