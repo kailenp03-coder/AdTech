@@ -2,6 +2,26 @@
 <html lang="en">
 <head>
 
+<!-- Google tag (gtag.js) event - delayed navigation helper -->
+<script>
+  // Helper function to delay opening a URL until a gtag event is sent.
+  // Call it in response to an action that should navigate to a URL.
+  function gtagSendEvent(url) {
+    var callback = function () {
+      if (typeof url === 'string') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion_event_outbound_click', {
+      'event_callback': callback,
+      'event_timeout': 2000,
+      // <event_parameters>
+    });
+    return false;
+  }
+</script>
+
+
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -33,22 +53,6 @@ gtag('config', 'AW-17395475370', {
 });
 </script>
 
-<!-- Conversion function -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-17395475370/X7wxCMfptf0aEKrH5-ZA',
-      'event_callback': callback,
-      'event_timeout': 2000
-  });
-  return false;
-}
-</script>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -118,7 +122,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="hero-content">
 <a href="https://wa.me/27685874885" 
    class="plan-btn" 
-   onclick="return gtag_report_conversion('https://wa.me/27685874885?text=Hi%20I%20need%20a%20website')">
+   onclick="return gtagSendEvent('https://wa.me/27685874885?text=Hi%20I%20need%20a%20website')">
    Build today
 </a>
 </div>
@@ -212,7 +216,7 @@ function testConversion() {
 <div class="services-cta">
 <a href="https://wa.me/27685874885" 
    class="plan-btn" 
-   onclick="return gtag_report_conversion('https://wa.me/27685874885?text=Hi%20I%20need%20a%20website')">
+   onclick="return gtagSendEvent('https://wa.me/27685874885?text=Hi%20I%20need%20a%20website')">
    Get my website started
 </a>
 </div>
@@ -261,7 +265,7 @@ function testConversion() {
 <div class="services-cta">
 <a href="https://wa.me/27685874885" 
    class="plan-btn" 
-   onclick="return gtag_report_conversion('https://wa.me/27685874885?text=Hi%20I%20need%20a%20website')">
+   onclick="return gtagSendEvent('https://wa.me/27685874885?text=Hi%20I%20need%20a%20website')">
    Build today
 </a>
 </div>
@@ -506,7 +510,7 @@ function testConversion() {
 
 <a href="https://wa.me/27685874885" 
    class="plan-btn" 
-   onclick="return gtag_report_conversion('https://wa.me/27685874885?text=Hi%20I%20need%20a%20website')">
+   onclick="return gtagSendEvent('https://wa.me/27685874885?text=Hi%20I%20need%20a%20website')">
    Build today
 </a>
 
@@ -532,7 +536,7 @@ function testConversion() {
 
 <a href="https://wa.me/27685874885" 
    class="plan-btn" 
-   onclick="return gtag_report_conversion('https://wa.me/27685874885?text=Hi%20I%20need%20a%20website')">
+   onclick="return gtagSendEvent('https://wa.me/27685874885?text=Hi%20I%20need%20a%20website')">
    Get Started
 </a>
 
@@ -556,7 +560,7 @@ function testConversion() {
 
 <a href="https://wa.me/27685874885" 
    class="plan-btn" 
-   onclick="return gtag_report_conversion('https://wa.me/27685874885?text=Hi%20I%20need%20a%20website')">
+   onclick="return gtagSendEvent('https://wa.me/27685874885?text=Hi%20I%20need%20a%20website')">
    Get a quote
 </a>
 
@@ -580,7 +584,7 @@ function testConversion() {
 
 <a href="https://wa.me/27685874885" 
    class="plan-btn" 
-   onclick="return gtag_report_conversion('https://wa.me/27685874885?text=Hi%20I%20need%20a%20website')">
+   onclick="return gtagSendEvent('https://wa.me/27685874885?text=Hi%20I%20need%20a%20website')">
    Launch Ads
 </a>
 
@@ -779,7 +783,7 @@ function testConversion() {
 
 <a href="https://wa.me/27685874885" 
    class="plan-btn" 
-   onclick="return gtag_report_conversion('https://wa.me/27685874885?text=Hi%20I%20need%20a%20website')">
+   onclick="return gtagSendEvent('https://wa.me/27685874885?text=Hi%20I%20need%20a%20website')">
    Message us on WhatsApp
 </a>
 
